@@ -1,0 +1,13 @@
+<head>
+	<meta charset="{{ site.charset }}"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ bloginfo('name') }}</title>
+	<link href="{{ "/assets/fonts/roboto.woff2" }}" as="font" crossorigin="anonymous">
+	<link href="{{ "/assets/fonts/roboto-500.woff2" }}" as="font" crossorigin="anonymous">
+	<link href="{{ "/assets/fonts/roboto-700.woff2" }}" as="font" crossorigin="anonymous">
+	<link href="{{ "/assets/fonts/roboto-900.woff2" }}" as="font" crossorigin="anonymous">
+	<link rel="icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon" />
+	<link rel="icon" href="/wp-content/themes/travel-explore/assets/images/favicon.ico" type="image/x-icon">
+	{% do action('get_header') %}
+	{{ function('wp_head') }}
+</head>
